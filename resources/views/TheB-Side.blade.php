@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The B-Side</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
-    </head>
-    <body>
-    
-        @include('navbar')
-
-        <div class="TheB-Side">
+@extends('plantilla')
+@section('fullwidth')
+<div class="TheB-Side">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="{{ asset('assets/img/imagen1.jpg') }}" alt="First slide" style="height: 50vh; object-fit: cover; filter: brightness(0.4);">
+                <img class="d-block w-100" src="{{ asset('assets/img/imagen1.jpg') }}" alt="First slide" style="height: 60vh; object-fit: cover; filter: brightness(0.4);">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('assets/img/imagen2.jpg') }}" alt="Second slide" style="height: 50vh; object-fit: cover; filter: brightness(0.4);">
+                <img class="d-block w-100" src="{{ asset('assets/img/imagen2.jpg') }}" alt="Second slide" style="height: 60vh; object-fit: cover; filter: brightness(0.4);">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="{{ asset('assets/img/imagen3.jpg') }}" alt="Third slide" style="height: 50vh; object-fit: cover; filter: brightness(0.4);">
+                <img class="d-block w-100" src="{{ asset('assets/img/imagen3.jpg') }}" alt="Third slide" style="height: 60vh; object-fit: cover; filter: brightness(0.4);">
             </div>
         </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -33,6 +22,8 @@
         </button>
     </div>
 </div>
+@endsection
+@section('contenido')
 <!--CARDS-->
 <div class="container mt-5">
     <div class="row g-4">
@@ -68,6 +59,4 @@
 
     </div>
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+@endsection
