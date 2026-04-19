@@ -54,7 +54,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-custom-link" href="#">
+                    <a class="nav-link nav-custom-link" href="/carrito">
                         <i class="bi bi-cart-dash-fill"></i>
                     </a>
                 </li>

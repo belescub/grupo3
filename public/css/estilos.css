@@ -23,12 +23,29 @@ body{
     text-decoration: none;
     transition: 0.3s ease;
 }
+/*iluminacion del logo al pasar el mouse*/
+.logo-glow {
+    filter: drop-shadow(0 0 10px rgba(136, 186, 99, 0.3));
+    transition: 0.4s;
+}
 
-/* Mantiene el color verde cuando se hace clic o el menú está abierto */
+.logo-glow:hover {
+    filter: drop-shadow(0 0 15px rgba(136, 186, 99, 0.6));
+}
+/* mantiene el color verde cuando se hace clic o el menú está abierto */
 .nav-custom-link:focus,
 .nav-custom-link:active,
 .nav-item.dropdown .nav-link.show {
     color: #77c040 !important;
+}
+/*al pasar el mouse por los enlaces y el carrito*/
+.nav-custom-link, .nav-action {
+    color: #77c040; 
+    transition: 0.3s ease;
+}
+.nav-custom-link:hover, .nav-action:hover {
+    color: #96C671 !important; 
+    text-shadow: 0 0 8px rgba(136, 186, 99, 0.4);
 }
 
 /* Fondo del menú desplegable */
@@ -73,11 +90,12 @@ body{
 .search-input {
     border: none;
     background: transparent;
-    color: #fff;
     outline: none;
     width: 0;
     transition: width 0.4s ease;
     font-size: 0.9rem;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .search-container:hover .search-input {
@@ -152,24 +170,22 @@ body{
     }
     footer i{
         font-size: 1.8rem;
-        color: #888;
+        color: #e4eedc;
         margin-right: 12px;
         transition:all 0.3s ease;
     }
     footer i:hover{
-        color: #77c040;
-        transform: translateY(-5px) scale(1.2);
+        color: #7aff14;
+        transform: scale(1.2);
     }
     .footer-img{
-        width: 80px;
-        height: 50px;
+        width: 50px;
+        height: 30px;
         object-fit: contain;
         margin: 5px;
-        filter:grayscale(100%);
         transition: 0.3s ease;
     }
     .footer-img:hover{
-        filter:grayscale(0%);
         transform: scale(1.1);
     }
     .footer-links a {
@@ -189,8 +205,6 @@ body{
 .footer-img {
     display: inline-block;
 }
-
-
 
 /* CONTACTO */
 .contacto{
@@ -263,7 +277,6 @@ input::placeholder, textarea::placeholder{
 
 
 /* fuente */
-
 /* titulos y secciones*/
 h1, h2, h3, .card-title, .footer-links h5 {
     font-family: 'Bebas Neue', cursive;
@@ -285,29 +298,65 @@ body, p, label, .search-input, .form-control {
 
 /* --- AJUSTES EXTRA NAVBAR --- */
 
-.nav-custom-link, .nav-action {
-    color: #77c040; /* Aplicando tu nuevo verde */
-    transition: 0.3s ease;
+
+/*catalogo de productos*/
+
+.catalog-item {
+    text-align: left; /* Todo alineado a la izquierda como en la foto */
+    background: transparent; /* Sin fondo blanco/gris */
+    border: none;
 }
 
-.nav-custom-link:hover, .nav-action:hover {
-    color: #96C671 !important; /* Un verde un poco más claro al pasar el mouse */
-    text-shadow: 0 0 8px rgba(136, 186, 99, 0.4);
+.catalog-img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* se fuerza a que todas las fotos sean cuadradas*/
+    object-fit: cover;
+    background-color: #111; /* por si la imagen tarda en cargar */
+    transition: transform 0.3s ease;
 }
 
-.search-input {
-    color: #88BA63;
+.catalog-item:hover .catalog-img {
+    transform: scale(1.03);
+}
+
+.catalog-info {
+    padding-top: 10px;
+}
+
+.catalog-title {
     font-family: 'Space Grotesk', sans-serif;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 0.4rem;
 }
 
-/*iluminacion del logo al pasar el mouse*/
-.logo-glow {
-    filter: drop-shadow(0 0 10px rgba(136, 186, 99, 0.3));
-    transition: 0.4s;
+.catalog-price {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500; /* negrita para el precio de contado */
 }
 
-.logo-glow:hover {
-    filter: drop-shadow(0 0 15px rgba(136, 186, 99, 0.6));
+.catalog-installments {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #77c040; 
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.catalog-cart-icon {
+    color: #77c040;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.catalog-cart-icon:hover {
+    color: #85df41; /* Se ilumina al pasar el mouse */
+    transform: scale(1.1);
 }
 
 @media(max-width:991px){
@@ -321,8 +370,45 @@ body, p, label, .search-input, .form-control {
         width: 100%;
     }
 
-    input {
+    .contacto input, .contacto textarea {
         padding: 15px;
     }
 
+}
+
+
+/*Quines Somos*/
+.quienes-img {
+    height: 300px;
+    width: 100%;
+    filter: brightness(0.45);
+}
+
+.titulo-quienes {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px black;
+}
+
+.texto-quienes {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.quienes-somos .card{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #9eee00;
+    color: rgb(220, 15, 15);
+}
+
+.quienes-somos .card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgb(238, 96, 96);
 }

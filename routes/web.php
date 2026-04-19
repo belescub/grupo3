@@ -12,3 +12,19 @@ Route::get('/contacto', function () {
 });
 
 Route::post('/contacto', [ContactoController::class, 'procesar']);
+
+Route::get('/terminosdeuso', function () {
+    return view('terminosdeuso'); 
+});
+
+Route::get('/quienessomos', function () {
+    return view('quienes-somos'); 
+});
+
+Route::get('/productos', function () { 
+    return view('productos'); 
+});
+
+Route::get('/carrito', function () { 
+    return view('en-construccion'); 
+});
