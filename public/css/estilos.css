@@ -1,10 +1,10 @@
 /*body*/
 body{
-    background-color: #4a4b4d;
-    color:#fff
+    background-color: #0a0a0a;
+    color:#fff;
 }
 .navbar-custom {
-    background-color: #4a4b4d!important;
+    background-color: #0a0a0a!important;
 }
 /* navbar fijo*/
 .nav-custom-link {
@@ -12,15 +12,49 @@ body{
     letter-spacing: 2px;
     font-weight: 500;
     transition: color 0.3s ease;
+    color: #77c040;
 }
 .nav-custom-link:hover {
-    color: #666 !important;
+    color: #77c040 !important;
 }
+.nav-action {
+    color: #77c040;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Mantiene el color verde cuando se hace clic o el menú está abierto */
+.nav-custom-link:focus,
+.nav-custom-link:active,
+.nav-item.dropdown .nav-link.show {
+    color: #77c040 !important;
+}
+
+/* Fondo del menú desplegable */
+.dropdown-menu {
+    background-color: #2b2b2b; /* Gris oscuro */
+    border: 1px solid #333; /* Borde sutil */
+}
+
+/* Color del texto de las opciones (CDs, Vinilos...) */
+.dropdown-item {
+    color: #e0e0e0; /* Gris clarito/blanco para que se lea bien */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por las opciones */
+.dropdown-item:hover, 
+.dropdown-item:focus {
+    background-color: #77c040; /* Fondo verde al pasar el mouse */
+    color: #000000; /* Texto negro para que resalte */
+}
+
 /* barra de busqueda */
 .search-container {
     display: inline-flex;
     padding: 5px;
-    background-color: #4a4b4d;
+    background-color: #000000;
     color: #fff;
     border-radius: 30px;
     align-items: center;
@@ -54,7 +88,7 @@ body{
 .search-btn {
     background: none;
     border: none;
-    color: #fff;
+    color: #77c040;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -86,7 +120,7 @@ body{
 }
 
 .custom-card:hover {
-    box-shadow: 5px 5px 20px rgb(0, 140, 255);
+    box-shadow: 5px 5px 20px rgb(15, 182, 51);
     transform: translateY(-3%);
 }
 
@@ -109,4 +143,186 @@ body{
     justify-content: center;
     align-items: center;
     color: #000;
+}
+/*footer*/
+    footer {
+    margin-top: 60px;
+    padding: 40px 0;
+    border-top: 1px solid #ffffff;
+    }
+    footer i{
+        font-size: 1.8rem;
+        color: #888;
+        margin-right: 12px;
+        transition:all 0.3s ease;
+    }
+    footer i:hover{
+        color: #77c040;
+        transform: translateY(-5px) scale(1.2);
+    }
+    .footer-img{
+        width: 80px;
+        height: 50px;
+        object-fit: contain;
+        margin: 5px;
+        filter:grayscale(100%);
+        transition: 0.3s ease;
+    }
+    .footer-img:hover{
+        filter:grayscale(0%);
+        transform: scale(1.1);
+    }
+    .footer-links a {
+    color: #76b276;
+    font-size: 14px;
+    text-decoration: none !important;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 8px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #77c040;
+    transform: translateX(5px);
+}
+.footer-img {
+    display: inline-block;
+}
+
+
+
+/* CONTACTO */
+.contacto{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: #77c040;
+    font-size: 15px;
+    font-weight: 600px;
+    margin-bottom: 15px;
+}
+.contacto input, .contacto textarea {
+
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 2px solid #77c040;
+    color: #000000;
+    outline: none;
+
+}
+
+input::placeholder, textarea::placeholder{
+    color: #b5cab5;
+}
+
+.form-text {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.form-text a{
+    color: #76b276;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn {
+    font-size: 16px;
+    color: aliceblue;
+    border: 0;
+    border-radius: 25px;
+    background-color: #77c040;
+    box-shadow: 0 0 20px rgba(119, 192, 64, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #77c040;
+}
+
+
+/* fuente */
+
+/* titulos y secciones*/
+h1, h2, h3, .card-title, .footer-links h5 {
+    font-family: 'Bebas Neue', cursive;
+    color: #77c040; /* El verde oliva de la imagen */
+}
+
+/* menu y botones*/
+.nav-custom-link, .nav-action, .btn, .dropdown-item {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem; /* Al ser condensada, necesita un poco más de tamaño */
+}
+
+/*cuerpo de texto, inputs y formularios */
+body, p, label, .search-input, .form-control {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+}
+
+/* --- AJUSTES EXTRA NAVBAR --- */
+
+.nav-custom-link, .nav-action {
+    color: #77c040; /* Aplicando tu nuevo verde */
+    transition: 0.3s ease;
+}
+
+.nav-custom-link:hover, .nav-action:hover {
+    color: #96C671 !important; /* Un verde un poco más claro al pasar el mouse */
+    text-shadow: 0 0 8px rgba(136, 186, 99, 0.4);
+}
+
+.search-input {
+    color: #88BA63;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/*iluminacion del logo al pasar el mouse*/
+.logo-glow {
+    filter: drop-shadow(0 0 10px rgba(136, 186, 99, 0.3));
+    transition: 0.4s;
+}
+
+.logo-glow:hover {
+    filter: drop-shadow(0 0 15px rgba(136, 186, 99, 0.6));
+}
+
+@media(max-width:991px){
+
+    body {
+        padding: 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    }
+
 }
