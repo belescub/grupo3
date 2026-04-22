@@ -1,12 +1,34 @@
 /*body*/
 body{
-    background-color: #0a0a0a;
-    color:#fff;
+    background: linear-gradient(145deg, #77c040, #14532D, #2b2b2b, #121212);
+    background-size: 300% 300%;
+    animation: gradientAnimation 20s ease infinite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffffff;
 }
-.navbar-custom {
-    background-color: #0a0a0a!important;
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
+
 /* navbar fijo*/
+
+.navbar-custom {
+    /* 1. Fondo negro, pero al 60% de opacidad (el 0.6 es la transparencia) */
+    background-color: rgba(10, 10, 10, 0.6) !important; 
+    
+    /* 2. El efecto de desenfoque (blur) para lo que está detrás */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Para que funcione bien en Safari/iPhone */
+    
+    /* 3. Opcional: Un borde muy sutil abajo para que el navbar no se pierda */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; 
+}
+
 .nav-custom-link {
     font-size: 0.85rem;
     letter-spacing: 2px;
@@ -357,11 +379,6 @@ body, p, label, .search-input, .form-control {
 }
 
 @media(max-width:991px){
-
-    body {
-        padding: 30px;
-    }
-
     form {
         padding: 50px 30px;
         width: 100%;
@@ -409,3 +426,50 @@ body, p, label, .search-input, .form-control {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgb(238, 96, 96);
 }
+
+/* registro */
+.card-box{
+    width: 100%;
+    max-width: 400px;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: rgba(168, 190, 159, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: #76b276 0px 0px 30px;
+    animation: fadeIn 0.6s ease;
+}
+.registro h3{
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 6px rgba(189, 183, 183, 0.3);
+}
+.form-label{
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    color: #0906d6 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 6px;
+}
+.input-group-text{
+    background: rgba(224, 7, 18, 0.856);
+    border: none;
+    color: #fff !important;
+    font-size: 18px;
+    padding: 10px 14px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+    background: rgba(224, 7, 18, 0.856);
+    border: none;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+

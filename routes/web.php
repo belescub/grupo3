@@ -28,3 +28,13 @@ Route::get('/productos', function () {
 Route::get('/carrito', function () { 
     return view('en-construccion'); 
 });
+
+
+Route::get('/login', function () { 
+    return view('login'); 
+});
+
+
+Route::get('/registro', function () { 
+    return view('registro'); 
+});
