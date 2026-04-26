@@ -1,31 +1,32 @@
 @extends('plantilla')
 @section('contenido')
+<div class="registro d-flex justify-content-center align-items-center registro">
 <div class="card-box">
-    <h1> Crear cuenta </h1>
+    <h1 class="text-center mb-4"> Crear cuenta </h1>
     <form>
         <div class="mb-3">
-            <label class"form-label">Nombre Completo</label>
+            <label class="form-label">Nombre Completo</label>
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
                 <input type="text" class="form-control" placeholder="Tu nombre completo" required>
             </div>
         </div>
         <div class="mb-3">
-            <label class"form-label">Correo electrónico</label>
+            <label class="form-label">Correo electrónico</label>
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
                 <input type="email" class="form-control" placeholder="ejemplo@gmail.com" required>
             </div>
         </div>
         <div class="mb-3">
-            <label class"form-label">Contraseña</label>
+            <label class="form-label">Contraseña</label>
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
                 <input type="password" class="form-control" placeholder="Contraseña" required>
             </div>
         </div>
         <div class="mb-3">
-            <label class"form-label">Confirmar Contraseña</label>
+            <label class="form-label">Confirmar Contraseña</label>
             <div class="input-group">
                 <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
                 <input type="password" class="form-control" placeholder="Confirma tu contraseña" required>

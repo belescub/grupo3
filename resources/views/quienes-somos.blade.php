@@ -19,7 +19,7 @@
 
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="{{ asset('assets/img/imagen3.jpg') }}" class="card-img-top">
+                <img src="{{ asset('assets/img/persona1.jpeg') }}" class="card-img-top">
                 <div class="card-body">
                     <p class="card-text">
                         Persona 1
@@ -30,7 +30,7 @@
 
         <div class="col-md-4">
             <div class="card h-100">
-                <img src="{{ asset('assets/img/imagen2.jpg') }}" class="card-img-top">
+                <img src="{{ asset('assets/img/persona2.jpeg') }}" class="card-img-top">
                 <div class="card-body">
                     <p class="card-text">
                         Persona 2

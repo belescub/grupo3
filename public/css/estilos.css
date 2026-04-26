@@ -93,7 +93,7 @@ body{
 .search-container {
     display: inline-flex;
     padding: 5px;
-    background-color: #000000;
+    background-color: #201f1f8e;
     color: #fff;
     border-radius: 30px;
     align-items: center;
@@ -184,6 +184,7 @@ body{
     align-items: center;
     color: #000;
 }
+
 /*footer*/
     footer {
     margin-top: 60px;
@@ -236,14 +237,14 @@ body{
     align-items: center;
 }
 
-form{
+.contacto form {
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
     width: 340px;
 }
-.input-group {
+.contacto .input-group {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -418,58 +419,174 @@ body, p, label, .search-input, .form-control {
     border-radius: 15px;
     overflow: hidden;
     transition: 0.3s;
-    background-color: #9eee00;
-    color: rgb(220, 15, 15);
+    background-color: #77c040;
+    color: rgb(255, 255, 255);
 }
 
 .quienes-somos .card:hover{
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgb(238, 96, 96);
+    box-shadow: 0 10px 20px rgb(40, 95, 35);
+}
+
+/* login */
+
+.login *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2c2a2a;
+}
+
+.login .wrapper{
+    width: 90%;;
+    max-width: 420px;
+    background-color: transparent;
+    border: 2px solid rgb(63, 100, 40);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(75, 72, 72, 0.97);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.login .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.login .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.login .wrapper .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(26, 24, 24, 0.964);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.login .wrapper .input-box input::placeholder{
+    color: #fff;
+}
+
+.login .wrapper .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.login .wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.login .wrapper .remember-forgot label input{
+    accent-color: #ffffff;
+    margin-right: 3px;
+}
+.login .wrapper .remember-forgot a{
+    color: #1c45c9;
+    text-decoration: none;
+}
+.login .wrapper .remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.login .wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #dbd8d8;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(11, 11, 11, 0.841);
+    cursor: pointer;
+    font-size: 16px;
+    color: #101010;
+    font-weight: 600;
+}
+
+.login .wrapper .register-link {
+    font-size: 14.5;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+
+.login .wrapper .register-link p a{
+    color: #1c45c9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login .wrapper .register-link p a:hover{
+
+    text-decoration: underline;
 }
 
 /* registro */
-.card-box{
+.registro .card-box{
     width: 100%;
-    max-width: 400px;
-    padding: 35px;
+    max-width: 450px;
+    padding: 30px;
     border-radius: 20px;
-    background-color: rgba(168, 190, 159, 0.95);
+    background-color: rgba(52, 53, 52, 0.404);
     backdrop-filter: blur(12px);
-    box-shadow: #76b276 0px 0px 30px;
+    box-shadow: #0a0a0ac5 0px 0px 30px;
     animation: fadeIn 0.6s ease;
 }
 .registro h3{
     font-weight: 800;
     font-size: 28px;
     margin-bottom: 20px;
-    text-shadow: 0 2px 6px rgba(189, 183, 183, 0.3);
+    text-shadow: 0 2px 6px rgba(255, 255, 255, 0.973);
 }
-.form-label{
-    font-weight: 600 !important;
-    font-size: 15px !important;
-    color: #0906d6 !important;
+.registro .form-label{
+    font-weight: 600 ;
+    font-size: 15px ;
+    color: #77c040;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 6px;
 }
-.input-group-text{
-    background: rgba(224, 7, 18, 0.856);
+.registro .input-group-text{
+    background: rgba(51, 49, 49, 0.822);
     border: none;
-    color: #fff !important;
+    border-radius: 8px 0 0 8px;
+    color: #fff;
     font-size: 18px;
-    padding: 10px 14px;
+    padding: 8px 14px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.form-control {
-    background: rgba(224, 7, 18, 0.856);
+.registro .form-control {
+    background: rgb(255, 255, 255) !important;
     border: none;
-    color: #fff !important;
+    color: #2b2b2b;
     font-weight: 600;
     font-size: 16px;
     padding: 10px 15px;
-    margin-bottom: 20px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
 }
 

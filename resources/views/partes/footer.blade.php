@@ -3,11 +3,9 @@
     <div class="row">
         <div class="col">
             <h3> Nosotros </h3>
-            <ul>
-                <li><a href="/quienessomos">Quiénes somos</a></li>
-                <li><a href="/terminosdeuso" >Términos y condiciones</a></li>
-                <li><a href="/contacto" >Contacto</a></li>
-            </ul>
+                <a href="/quienessomos"><i class="fa-solid fa-users"></i></a>
+                <a href="/terminosdeuso" ><i class="fa-solid fa-gavel"></i></a>
+                <a href="/contacto" ><i class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="col">
             <h3> Envíos </h3>

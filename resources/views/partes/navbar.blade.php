@@ -18,9 +18,9 @@
         </div>
     <!--inicio de sesion-->
         <div class="col-md-4 text-end">
-            <a href="#" class="nav-action">Crear Cuenta</a>
+            <a href="/registro" class="nav-action">Crear Cuenta</a>
             <span class="mx-2 text-secondary">|</span>
-            <a href="#" class="nav-action">Iniciar Sesión</a>
+            <a href="/login" class="nav-action">Iniciar Sesión</a>
         </div>
     </div>
 </div>
@@ -42,10 +42,11 @@
                         Productos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">CDs</a></li>
-                        <li><a class="dropdown-item" href="#">Vinilos</a></li>
-                        <li><a class="dropdown-item" href="#">Reproductores</a></li>
-                        <li><a class="dropdown-item" href="#">Accesorios y Cuidados</a></li>
+                        <li><a class="dropdown-item" href="/productos">Ver todos los productos</a></li>
+                        <li><a class="dropdown-item" href="/productos">CDs</a></li>
+                        <li><a class="dropdown-item" href="/productos">Vinilos</a></li>
+                        <li><a class="dropdown-item" href="/productos">Reproductores</a></li>
+                        <li><a class="dropdown-item" href="/productos">Accesorios y Cuidados</a></li>
                     </ul>
                 </li>
 
