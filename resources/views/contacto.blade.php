@@ -9,16 +9,16 @@
         <div class="input-group">
 
             <label for="name">Nombre</label>
-            <input type="text" id="name" placeholder="Nombre">
+            <input type="text" id="name" name="nombre" placeholder="Nombre">
 
             <label for="phone">Teléfono</label>
-            <input type="text" id="phone" placeholder="Telefono">
+            <input type="text" id="phone" name="telefono" placeholder="Telefono">
 
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Email">
+            <input type="email" id="email" name="email" placeholder="Email">
 
             <label for="message">Mensaje</label>
-            <textarea id="message" rows="5" placeholder="Mensaje"></textarea>
+            <textarea id="message" name="mensaje" rows="5" placeholder="Mensaje"></textarea>
 
             <div class="form-text">
                 <a href="/privacidad">Política de privacidad</a>

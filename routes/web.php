@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegistroController;
 
 Route::get('/', function () {
     return view('TheB-Side'); //pagina princial
@@ -37,8 +39,9 @@ Route::get('/carrito', function () {
 Route::get('/login', function () { 
     return view('login'); 
 });
-
+Route::post('/login', [LoginController::class, 'procesar']);
 
 Route::get('/registro', function () { 
     return view('registro'); 
 });
+Route::post('/registro', [RegistroController::class, 'procesar']);
