@@ -21,8 +21,8 @@ Route::get('/quienessomos', function () {
     return view('quienes-somos'); 
 });
 
-Route::get('/productos', function () { 
-    return view('productos'); 
+Route::get('/productos/{categoria?}', function ($categoria = 'todos') { 
+    return view('productos', ['categoria' => $categoria]); 
 });
 
 Route::get('/carrito', function () { 

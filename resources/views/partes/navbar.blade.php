@@ -1,8 +1,8 @@
 <!--navbar donde se encuentra logo, busqueda e inicio de sesion-->
 <div class="container-fluid navbar-custom pt-3 pb-2 border-bottom position-relative" style="z-index: 1020;">
-    <div class="row align-items-center px-4">
+    <div class="row align-items-center px-4 gy-3">
         <!--busqueda--> 
-        <div class="col-md-4">
+        <div class="col-12 col-md-4 order-2 order-md-1 d-flex justify-content-center justify-content-md-start">
             <div class="search-container">
             <input type="text" class="search-input" placeholder="Buscar...">
             <button class="search-btn">
@@ -11,13 +11,13 @@
         </div>
     </div>
     <!--logo-->
-        <div class="col-md-4 text-center">
+        <div class="col-12 col-md-4 order-1 order-md-2 text-center">
             <a href="/">
                 <img src="{{ asset('assets/img/logo1.png') }}" alt="The B-Side Logo" width="200" class="logo-glow">
             </a>
         </div>
     <!--inicio de sesion-->
-        <div class="col-md-4 text-end">
+        <div class="col-12 col-md-4 order-3 d-flex justify-content-center justify-content-md-end">
             <a href="/registro" class="nav-action">Crear Cuenta</a>
             <span class="mx-2 text-secondary">|</span>
             <a href="/login" class="nav-action">Iniciar Sesión</a>
@@ -42,11 +42,11 @@
                         Productos
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/productos">Ver todos los productos</a></li>
-                        <li><a class="dropdown-item" href="/productos">CDs</a></li>
-                        <li><a class="dropdown-item" href="/productos">Vinilos</a></li>
-                        <li><a class="dropdown-item" href="/productos">Reproductores</a></li>
-                        <li><a class="dropdown-item" href="/productos">Accesorios y Cuidados</a></li>
+                        <li><a class="dropdown-item" href="/productos/todos">Ver todos los productos</a></li>
+                        <li><a class="dropdown-item" href="/productos/cds">CDs</a></li>
+                        <li><a class="dropdown-item" href="/productos/vinilos">Vinilos</a></li>
+                        <li><a class="dropdown-item" href="/productos/reproductores">Reproductores</a></li>
+                        <li><a class="dropdown-item" href="/productos/accesorios">Accesorios y Cuidados</a></li>
                     </ul>
                 </li>
 

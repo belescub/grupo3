@@ -120,6 +120,10 @@ body{
     font-family: 'Space Grotesk', sans-serif;
 }
 
+.search-input::placeholder {
+    color: #b5b5b5;
+}
+
 .search-container:hover .search-input {
     width: 200px; 
     margin-right: 10px;
@@ -250,7 +254,7 @@ body{
     text-align: left;
 }
 
-label {
+.contacto label {
     color: #77c040;
     font-size: 15px;
     font-weight: 600px;
@@ -259,17 +263,16 @@ label {
 .contacto input, .contacto textarea {
 
     padding: 17px 25px;
-    border-radius: 25px;
+    border-radius: 20px !important;
     margin-bottom: 20px;
     background-color: #ffffff;
     border: 2px solid #77c040;
     color: #000000;
     outline: none;
-
 }
 
 input::placeholder, textarea::placeholder{
-    color: #b5cab5;
+    color: #2b2b2b;
 }
 
 .form-text {
@@ -279,44 +282,46 @@ input::placeholder, textarea::placeholder{
     text-align: center;
 }
 .form-text a{
-    color: #76b276;
-    font-size: 14px;
-    font-weight: 600;
+    color: #77c040; /*color del terminos y condiciones*/
+    font-size: 15px;
+    font-weight: 600px;
     text-decoration: none;
 }
+
+/* botones */
+/* BOTONES UNIFICADOS */
+
 .btn {
-    font-size: 16px;
-    color: aliceblue;
-    border: 0;
-    border-radius: 25px;
-    background-color: #77c040;
-    box-shadow: 0 0 20px rgba(119, 192, 64, 0.4);
-    cursor: pointer;
+    background-color: #77c040 !important;
+    color: #ffffff !important;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
 }
 
-.btn:hover{
-    background-color: #77c040;
+/* HOVER (el efecto que querés) */
+.btn:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: 0 0 10px rgba(119, 192, 64, 0.6);
 }
 
-
-/* fuente */
-/* titulos y secciones*/
+/* titulos y secciones */
 h1, h2, h3, .card-title, .footer-links h5 {
     font-family: 'Bebas Neue', cursive;
-    color: #77c040; /* El verde oliva de la imagen */
+    color: #77c040;
 }
 
+/* cuerpo de texto, inputs y formularios */
+body, p, label, .search-input, .form-control, .catalog-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+}
 /* menu y botones*/
 .nav-custom-link, .nav-action, .btn, .dropdown-item {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1.5px;
     font-size: 1.1rem; /* Al ser condensada, necesita un poco más de tamaño */
-}
-
-/*cuerpo de texto, inputs y formularios */
-body, p, label, .search-input, .form-control {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 300;
 }
 
 /*catalogo de productos*/
@@ -428,124 +433,8 @@ body, p, label, .search-input, .form-control {
     box-shadow: 0 10px 20px rgb(40, 95, 35);
 }
 
-/* login */
-
-.login *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.login body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #2c2a2a;
-}
-
-.login .wrapper{
-    width: 90%;;
-    max-width: 420px;
-    background-color: transparent;
-    border: 2px solid rgb(63, 100, 40);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(75, 72, 72, 0.97);
-    color: #fff;
-    border-radius: 10px;
-    padding: 30px 40px;
-}
-.login .wrapper h1{
-    font-size: 36px;
-    text-align: center;
-}
-
-.login .wrapper .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-.login .wrapper .input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(26, 24, 24, 0.964);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-
-.login .wrapper .input-box input::placeholder{
-    color: #fff;
-}
-
-.login .wrapper .input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
-.login .wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-}
-
-.login .wrapper .remember-forgot label input{
-    accent-color: #ffffff;
-    margin-right: 3px;
-}
-.login .wrapper .remember-forgot a{
-    color: #1c45c9;
-    text-decoration: none;
-}
-.login .wrapper .remember-forgot a:hover{
-    text-decoration: underline;
-}
-
-.login .wrapper .btn {
-    width: 100%;
-    height: 45px;
-    background: #dbd8d8;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(11, 11, 11, 0.841);
-    cursor: pointer;
-    font-size: 16px;
-    color: #101010;
-    font-weight: 600;
-}
-
-.login .wrapper .register-link {
-    font-size: 14.5;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-
-.login .wrapper .register-link p a{
-    color: #1c45c9;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.login .wrapper .register-link p a:hover{
-
-    text-decoration: underline;
-}
-
-/* registro */
-.registro .card-box{
+/* login y registro */
+.cuenta .card-box{
     width: 100%;
     max-width: 450px;
     padding: 30px;
@@ -555,20 +444,21 @@ body, p, label, .search-input, .form-control {
     box-shadow: #0a0a0ac5 0px 0px 30px;
     animation: fadeIn 0.6s ease;
 }
-.registro h3{
-    font-weight: 800;
+.cuenta h2{
+    font-weight: 700;
+    letter-spacing: 1.5px;
     font-size: 28px;
     margin-bottom: 20px;
-    text-shadow: 0 2px 6px rgba(255, 255, 255, 0.973);
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px;
 }
-.registro .form-label{
+.cuenta .form-label{
     font-weight: 600 ;
     font-size: 15px ;
     color: #77c040;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 6px;
 }
-.registro .input-group-text{
+.cuenta .input-group-text{
     background: rgba(51, 49, 49, 0.822);
     border: none;
     border-radius: 8px 0 0 8px;
@@ -578,7 +468,7 @@ body, p, label, .search-input, .form-control {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.registro .form-control {
+.cuenta .form-control {
     background: rgb(255, 255, 255) !important;
     border: none;
     color: #2b2b2b;
@@ -590,3 +480,70 @@ body, p, label, .search-input, .form-control {
     border-radius: 0 8px 8px 0;
 }
 
+/* RESPONSIVE PARA CELULARES CHICOS */
+@media (max-width: 350px) {
+    /* catalogo de una sola columna */
+    .catalogo-row > * {
+        width: 100% !important; /* con este le estamos obligando a que cada producto ocupe el 100% del ancho */
+    }
+    /* achica el logo en celulares chicos */
+    .logo-glow {
+        width: 150px !important; 
+    }
+    /* achica la letra de iniciar sesion y crear cuenta */
+    .nav-action {
+        font-size: 0.70rem; 
+    }
+    /* evita que la barra de búsqueda se desborde */
+    .search-container {
+        max-width: 100%; 
+        padding: 5px 10px;
+    }
+        .search-container:hover .search-input {
+    width: 150px; /* baja el ancho base */
+    max-width: 40vw; /* limita el ancho máximo al 40% del viewport */
+    margin-right: 10px;
+}
+    .navbar-nav {
+        gap: 0.5rem !important;  /* ajustamos los espacios del Navbar móvil (Inicio, Productos, Contacto) */
+    }
+}
+
+@media (max-width: 200px) {
+    /* catalogo de una sola columna*/
+    .catalogo-row > * {
+        width: 100% !important; 
+    }
+    /* achica el logo un poco más en celulares muy chicos */
+    .logo-glow {
+        width: 60px !important; 
+    }
+    /* achica la letra de iniciar sesión y crear cuenta */
+    .nav-action {
+        font-size: 0.30rem; 
+    }
+    /* evita que la barra de búsqueda se desborde */
+    .search-container {
+        max-width: 100%; 
+        padding: 5px 8px;
+    }
+    /* ajustamos los espacios del Navbar móvil (Inicio, Productos, Contacto) */
+    .navbar-nav {
+        gap: 0.5rem !important; /* Reduce el espacio exagerado entre las opciones del menú */
+    }
+    .search-container:hover .search-input {
+    width: 120px; /* baja el ancho base */
+    max-width: 30vw; /* limita el ancho máximo al 30% del viewport */
+    margin-right: 10px;
+}
+/* menu desplegable en celulares muy chicos */
+.dropdown-menu {
+        min-width: 100% !important;
+        font-size: 0.6rem; 
+    }
+
+    .dropdown-item {
+        white-space: normal; /* Permite que el texto salte de línea si es muy largo */
+        padding: 5px;
+    }
+}

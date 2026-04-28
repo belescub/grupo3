@@ -1,8 +1,8 @@
 @extends('plantilla')
 @section('contenido')
-<div class="registro d-flex justify-content-center align-items-center registro">
+<div class="cuenta d-flex justify-content-center align-items-center cuenta">
 <div class="card-box">
-    <h1 class="text-center mb-4"> Crear cuenta </h1>
+    <h2 class="text-center mb-4"> Crear cuenta </h2>
     <form>
         <div class="mb-3">
             <label class="form-label">Nombre Completo</label>
