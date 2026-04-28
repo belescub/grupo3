@@ -18,14 +18,14 @@ body{
 /* navbar fijo*/
 
 .navbar-custom {
-    /* 1. Fondo negro, pero al 60% de opacidad (el 0.6 es la transparencia) */
+    /*fondo negro, pero al 60% de opacidad (el 0.6 es la transparencia) */
     background-color: rgba(10, 10, 10, 0.6) !important; 
     
-    /* 2. El efecto de desenfoque (blur) para lo que está detrás */
+    /*efecto de desenfoque (blur) para lo que está detrás */
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Para que funcione bien en Safari/iPhone */
+    -webkit-backdrop-filter: blur(10px); 
     
-    /* 3. Opcional: Un borde muy sutil abajo para que el navbar no se pierda */
+    /* borde sutil abajo para que el navbar no se pierda */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important; 
 }
 
