@@ -11,7 +11,7 @@
             <label for="name">Nombre</label>
             <input type="text" id="name" placeholder="Nombre">
 
-            <label for="phone">Telefono</label>
+            <label for="phone">Teléfono</label>
             <input type="text" id="phone" placeholder="Telefono">
 
             <label for="email">Email</label>
@@ -21,8 +21,8 @@
             <textarea id="message" rows="5" placeholder="Mensaje"></textarea>
 
             <div class="form-text">
-                <a href="#">Política de privacidad</a>
-                <a href="#">Términos y condiciones</a>
+                <a href="/privacidad">Política de privacidad</a>
+                <a href="/terminosdeuso">Términos y condiciones</a>
             </div>
 
             <input class="btn" type="submit" value="Enviar">

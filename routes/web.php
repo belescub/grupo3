@@ -17,6 +17,10 @@ Route::get('/terminosdeuso', function () {
     return view('terminosdeuso'); 
 });
 
+Route::get('/privacidad', function(){
+    return view('privacidad');
+});
+
 Route::get('/quienessomos', function () {
     return view('quienes-somos'); 
 });
