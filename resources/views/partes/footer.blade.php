@@ -24,9 +24,9 @@
         </div>
         <div class="col">
             <h3> Síguenos </h3>
-            <a href="#"><i class="bi bi-spotify"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="https://open.spotify.com/intl-es"><i class="bi bi-spotify"></i></a>
+            <a href="https://www.instagram.com/?hl=es"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/"><i class="bi bi-tiktok"></i></a>
         </div>
 </div>
 </footer>
