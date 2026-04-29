@@ -45,7 +45,7 @@ body{
     text-decoration: none;
     transition: 0.3s ease;
 }
-/*iluminacion del logo al pasar el mouse*/
+/*iluminación del logo al pasar el mouse*/
 .logo-glow {
     filter: drop-shadow(0 0 10px rgba(136, 186, 99, 0.3));
     transition: 0.4s;
@@ -70,23 +70,23 @@ body{
     text-shadow: 0 0 8px rgba(136, 186, 99, 0.4);
 }
 
-/* Fondo del menú desplegable */
+/* fondo del menú desplegable */
 .dropdown-menu {
-    background-color: #2b2b2b; /* Gris oscuro */
-    border: 1px solid #333; /* Borde sutil */
+    background-color: #2b2b2b; 
+    border: 1px solid #333; /* pequeño borde */
 }
 
-/* Color del texto de las opciones (CDs, Vinilos...) */
+/* color del texto de las opciones (CDs, Vinilos...) */
 .dropdown-item {
-    color: #e0e0e0; /* Gris clarito/blanco para que se lea bien */
+    color: #e0e0e0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efecto al pasar el mouse por las opciones */
+/* efecto al pasar el mouse por las opciones */
 .dropdown-item:hover, 
 .dropdown-item:focus {
-    background-color: #77c040; /* Fondo verde al pasar el mouse */
-    color: #000000; /* Texto negro para que resalte */
+    background-color: #77c040; /* fondo verde al pasar el mouse */
+    color: #000000; /* texto negro para que resalte */
 }
 
 /* barra de busqueda */
@@ -101,7 +101,7 @@ body{
     /* animacion del max-width para que se estire al pasar el mouse */
     transition: max-width 0.4s ease, padding 0.4s ease;
     overflow: hidden;
-    max-width: 45px; /* inicia como el icono de busqueda*/
+    max-width: 45px; /* inicia con el icono de busqueda*/
 }
 
 .search-container:hover {
@@ -160,7 +160,7 @@ body{
     box-shadow: 0px 1px 10px rgba(168, 190, 159, 0.95);
     cursor: default;
     transition: all 400ms ease;
-    position: relative; /* IMPORTANTE */
+    position: relative;
 }
 
 .custom-card:hover {
@@ -168,14 +168,12 @@ body{
     transform: translateY(-3%);
 }
 
-/* Imagen */
 .card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Overlay centrado */
 .overlay-centrado {
     position: absolute;
     top: 0;
@@ -289,8 +287,6 @@ input::placeholder, textarea::placeholder{
 }
 
 /* botones */
-/* BOTONES UNIFICADOS */
-
 .btn {
     background-color: #77c040 !important;
     color: #ffffff !important;
@@ -299,7 +295,7 @@ input::placeholder, textarea::placeholder{
     transition: all 0.3s ease;
 }
 
-/* HOVER (el efecto que querés) */
+/* HOVER */
 .btn:hover {
     background-color: #ffffff !important;
     color: #000000 !important;
@@ -321,20 +317,20 @@ body, p, label, .search-input, .form-control, .catalog-title {
 .nav-custom-link, .nav-action, .btn, .dropdown-item {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1.5px;
-    font-size: 1.1rem; /* Al ser condensada, necesita un poco más de tamaño */
+    font-size: 1.1rem; 
 }
 
 /*catalogo de productos*/
 
 .catalog-item {
-    text-align: left; /* Todo alineado a la izquierda como en la foto */
-    background: transparent; /* Sin fondo blanco/gris */
+    text-align: left;
+    background: transparent;
     border: none;
 }
 
 .catalog-img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* se fuerza a que todas las fotos sean cuadradas*/
+    aspect-ratio: 1 / 1; /*obliga a que todas las fotos sean cuadradas*/
     object-fit: cover;
     background-color: #111; /* por si la imagen tarda en cargar */
     transition: transform 0.3s ease;
@@ -380,7 +376,7 @@ body, p, label, .search-input, .form-control, .catalog-title {
 }
 
 .catalog-cart-icon:hover {
-    color: #85df41; /* Se ilumina al pasar el mouse */
+    color: #85df41; /* se ilumina al pasar el mouse */
     transform: scale(1.1);
 }
 
@@ -480,11 +476,11 @@ body, p, label, .search-input, .form-control, .catalog-title {
     border-radius: 0 8px 8px 0;
 }
 
-/* RESPONSIVE PARA CELULARES CHICOS */
+/* RESPONSIVE PARA CELULARES */
 @media (max-width: 350px) {
     /* catalogo de una sola columna */
     .catalogo-row > * {
-        width: 100% !important; /* con este le estamos obligando a que cada producto ocupe el 100% del ancho */
+        width: 100% !important; /* obliga a que el producto ocupe el 100% del ancho */
     }
     /* achica el logo en celulares chicos */
     .logo-glow {
@@ -529,7 +525,7 @@ body, p, label, .search-input, .form-control, .catalog-title {
     }
     /* ajustamos los espacios del Navbar móvil (Inicio, Productos, Contacto) */
     .navbar-nav {
-        gap: 0.5rem !important; /* Reduce el espacio exagerado entre las opciones del menú */
+        gap: 0.5rem !important; /* reduce el espacio entre las opciones del menú */
     }
     .search-container:hover .search-input {
     width: 120px; /* baja el ancho base */
@@ -543,7 +539,7 @@ body, p, label, .search-input, .form-control, .catalog-title {
     }
 
     .dropdown-item {
-        white-space: normal; /* Permite que el texto salte de línea si es muy largo */
+        white-space: normal; /* el texto salta de línea si es muy largo */
         padding: 5px;
     }
 }
